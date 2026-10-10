@@ -1,28 +1,55 @@
-# React med TypeScript
+# Jeopardy
 
-Dette er et ganske simpelt prosjekt med ordinær React med TypeScript som bygges med [Vite](https://vitejs.dev/)
+Dette er et enkelt quiz-spill bygget med React og Vite. I spillet kan man opprette opp til 5 lag som holder styr på poeng. Lagene velger kategori og vanskelighetsgrad. Høyere vanskelighetsgrad gir flere poeng. 
 
-Vi har mer eller mindre kjørt kommandoen for å opprette et nytt React-prosjekt med TypeScript og Vite, og så har vi fjernet [`eslint`](https://www.npmjs.com/package/eslint), lagt til [`prettier`](https://www.npmjs.com/package/prettier), og gjort noen endringer i selve koden.
+## Funksjonalitet
+- Spillbrett med spørsmål fordelt på kategorier og vanskelighetsgrad
+- Spørsmålskort som viser spørsmål og svar
+- Poengtavle som holder styr på poengsummen til hvert lag
 
-Om du ønsker å bruke dette utgangspunktet kan du kjøre følgende kommando
+## Teknologier
+- [React](https://react.dev/) – brukergrensesnitt
+- [Vite](https://vite.dev/) – utviklingsserver og bygging
+
+## Kom i gang
+
+### Krav
+- [Node.js](https://nodejs.org/) (Versjon v20.20.2 eller nyere)
+- npm
+
+### Installasjon
 
 ```bash
-# react
-npx degit github:bekk/prosjektutgangspunkt/react react-prosjekt
-```
-
-Om du ønsker å ta utgangspunkt i den offisielle malen for React-prosjekter bygget med Vite, kan du kjøre følgende kommando
-
-```bash
-npm create vite@latest react -- --template react
-```
-
-## Oppsett og utvikling på lokal maskin
-
-```bash
-# Installer avhengigheter - dette trenger du bare å gjøre første gangen
+git clone https://github.com/cecilieluttian/Jeopardy.git
+cd bekk-workshop
 npm install
+```
 
-# Kjør appen lokalt for utvikling
+### Kjør lokalt
+
+```bash
 npm run dev
 ```
+
+Åpne http://localhost:5173 i nettleseren.
+
+### Bygg for produksjon
+
+```bash
+npm run build
+npm run preview   
+```
+
+## Deploy
+
+Prosjektet er deplyet på Vercel: https://hobbyprosjekt-livid.vercel.app
+
+## Videre arbeid
+
+- [ ] Mulighet for å endre spørsmålene selv på nettsiden
+- [ ] Gi navn på lagene
+- [ ] Mulighet for å endre fargepalettet på nettsiden
+
+## Laget av
+
+Cecilie Uttian – https://github.com/cecilieluttian
